@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Reservation and Rental</title>
+</head>
+<body>
+    <div class="container" id="cars">
+        <nav>
+            <img src="logo.png"class="logo">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h2>The THAR CARS</h2>
+            <h1>AX Opt & LX </h1>
+            <p>he latest version of Mahindra THAR which has been launched in India with various features like different engine types (petrol or diesel), transmission modes (manual or automatic), drivetrain configurations (4 wheel drive or rear wheel drive) etc</p>
+            <h3>Chose your color</h3>
+            <div class="color-select">
+                <div id="red"></div>
+                <div id="green"></div>
+                <div id="black"></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let redBtn = document.getElementById("red");
+        let greenBtn = document.getElementById("green");
+        let blackBtn = document.getElementById("black");
+        let cars = document.getElementById("cars");
+
+        blackBtn.onclick = function(){
+            cars.style.backgroundImage = "url(pic1.png)";
+
+        }
+        
+        redBtn.onclick = function(){
+            cars.style.backgroundImage = "url(pic2.png)";
+
+        }
+        
+        greenBtn.onclick = function(){
+            cars.style.backgroundImage = "url(pic3.png)";
+
+        }
+    </script>
+    <header>
+        <h1>Car Rental and Reservation</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Car Rental</h2>
+        <p>Greetings from Car Rental , the car rental service that makes you feel at home. We are delighted to have you as our guest and we are committed to making your car rental experience as smooth and enjoyable as possible. At Car Rental, you can find the car that suits your needs and budget, from compact to spacious, from manual to automatic. You can also take advantage of our special offers, loyalty program, and customer reviews. Start your journey with Car Rental  and explore the location in comfort and style.</p>
+    </section>
+
+
+    <section id="cars">
+        <h2>Model 1</h2>
+        <div class="car">
+            <img src="https://stimg.cardekho.com/images/car-images/large/Lotus/Eletre/11338/1699517194751/front-left-side-47.jpg" alt="Car 1">
+            
+            <h3>Car Model 1</h3>
+            <p style="color: beige;">Though there is an assortment of brand-new and fully redesigned passenger cars hitting the road for 2020 model year, their numbers are dwindling as buyers are instead choosing sport-utility vehicles as their rides of choice. Stalwart sedans like the Chevrolet Impala and Ford Taurus are being discontinued, with the number of small cars in particular thinning rapidly. While there were 26 subcompact models on the market as recently as 2016, they’re down to just 17 for 2019, with the Ford Fiesta and Chevrolet Sonic reportedly bowing out at the end of the current model year.</p>
+            <button>Reserve Now</button>
+        </div>
+        <!-- Repeat similar blocks for other cars -->
+    </section>
+
+    <section id="cars2">
+        <h2>Model 2</h2>
+        <div class="car2">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960" alt="Car 2">
+            
+            <h3>Car Mode 2 </h3>
+            <p style="color: beige;">Intensify the connection between you and your GR Supra. Available with a 6-speed intelligent Manual Transmission (iMT) that optimizes your revs as you shift, the 3.0L 6-cylinder engine puts 382 horsepower * and 368 lb.-ft. of torque at your fingertips. Take the reins as you go through every corner while the g-forces make you feel like you're sinking into your seat.</p>
+            <button>Reserve Now</button>
+        </div>
+
+        <section id="cars3">
+            <h2>Model 2</h2>
+            <div class="car2">
+                <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/2023/revuelto/revuelto_m.png" alt="Car 2">
+                
+                <h3>Car Mode 3 </h3>
+                <p style="color: beige;">The Lamborghini Aventador has 1 Petrol Engine on offer. The Petrol engine is 6498 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the Aventador has a mileage of 7.69 kmpl & Ground clearance of Aventador is 125mm. The Aventador is a 2 seater 12 cylinder car and has length of 4868mm, width of 2273mm and a wheelbase of 2700mm.</p>
+                <button>Reserve Now</button>
+            </div>
+        <!-- Repeat similar blocks for other cars -->
+    </section>
+
+    <!-- <section>
+        <h2>Our car</h2>
+    </section> -->
+
+    <section id="reservation">
+        <h2>Reservation</h2>
+        <form action="#" method="post">
+            <label for="carModel">Select a Car:</label>
+            <select id="carModel" name="carModel">
+                <option value="car1">Car Model 1</option>
+                <!-- Add options for other cars -->
+            </select>
+            <label for="pickupDate">Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate">
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate">
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>contact no:1234567890</p>
+        <p>For inquiries and assistance, please contact us at info@carrental.com</p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>&copy; 2023 Car Rental</p>
+    </footer>
+</body>
+</html>
